@@ -80,7 +80,7 @@ public WebElement getHindiRadiobtn() {
 	return hindiRadiobtn;
 }
 
-@FindBy(id="icp-save-button-announce")
+@FindBy(xpath="//input[@aria-labelledby='icp-save-button-announce']")
 private WebElement submitLanguagebtn;
 
 public WebElement getSubmitLanguagebtn() {

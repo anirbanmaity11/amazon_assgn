@@ -211,6 +211,7 @@ public class Amazon_UI_Testing extends BaseClass{
 	String actuallanguage="HI";
 	Thread.sleep(2000);
 	String changeLanguage =h.getChangedLanguagebtn().getText();
+	Reporter.log(changeLanguage, true);
 	SoftAssert s=new SoftAssert();
 	s.assertEquals(changeLanguage, actuallanguage);
 	s.assertAll();
